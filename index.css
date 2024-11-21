@@ -20,6 +20,7 @@ body
     width: 100vw; /* Prend toute la largeur de la fenêtre */
     height: 100vh; /* Prend toute la hauteur de la fenêtre */
     object-fit: cover; /* L'image remplit l'espace sans être déformée */
+    z-index: -1; /* L'image est en dessous des autres éléments */
 #wb_FontAwesomeIcon6
 {
    background-color: #BDB76B;
