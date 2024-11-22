@@ -72,7 +72,23 @@ html, body {
    padding: 8px 8px 8px 8px;
    vertical-align: top;
 }
-
+#wb_FontAwesomeIcon6 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#wb_FontAwesomeIcon6:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #2E2E2E;
+}
 #FontAwesomeIcon6
 {
    height: 101px;
@@ -87,6 +103,10 @@ html, body {
    vertical-align: middle;
    width: 94px;
 }
+#wb_FontAwesomeIcon6:hover #FontAwesomeIcon6 i
+{
+   color: #2E2E2E;
+}
 #wb_FontAwesomeIcon9
 {
    background-color: #BDB76B;
@@ -98,7 +118,23 @@ html, body {
    padding: 8px 8px 8px 8px;
    vertical-align: top;
 }
-
+#wb_FontAwesomeIcon9 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#wb_FontAwesomeIcon9:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #2E2E2E;
+}
 #FontAwesomeIcon9
 {
    height: 101px;
@@ -113,7 +149,10 @@ html, body {
    vertical-align: middle;
    width: 94px;
 }
-
+#wb_FontAwesomeIcon9:hover #FontAwesomeIcon9 i
+{
+   color: #2E2E2E;
+}
 #wb_Image3
 {
    vertical-align: top;
@@ -140,6 +179,17 @@ html, body {
    padding: 0;
    vertical-align: top;
 }
+#wb_Icon1 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
 #Icon1
 {
    height: 100px;
@@ -154,7 +204,9 @@ html, body {
    vertical-align: middle;
    width: 99px;
 }
-
+#wb_Icon1:hover #Icon1 i
+{
+   color: #F8F8FF;
 }
 #wb_Icon1
 {
@@ -300,3 +352,5 @@ body
    width: 117px;
 }
 }
+dnmcsprtclub/index.css at main · uihhioh654f6/dnmcsprtclub
+
