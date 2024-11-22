@@ -1,30 +1,10 @@
-html, body, #container
-{
-   width: 100%;
-   height: 100%;
-}
-body {
-   margin: 0;
-   padding: 0;
-   height: 100vh; /* Hauteur totale de la fenêtre */
-   background-color: #FFFFFF;
-   background-image: url('backsitedsc262.jpg'); /* Chemin vers votre image */
-   background-size: cover; /* L'image couvre toute la surface */
-   background-repeat: no-repeat; /* Pas de répétition */
-   background-position: center; /* Centre l'image */
-   color: #000000;
-   font-family: Arial, sans-serif;
-   font-weight: normal;
-   font-size: 13px;
-   line-height: 1.1875;
-}
-
 /* Réinitialisation pour HTML et BODY */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    position: relative;  /* Ajouter le positionnement relatif au body */
 }
 
 /* Conteneur pour l'image de fond */
@@ -38,318 +18,97 @@ html, body {
     z-index: -1; /* Place l'image derrière tout le reste */
 }
 
-/* Image de fond */
-#background-image {
-    width: 100%; /* Adapte l'image à la largeur */
-    height: 100%; /* Adapte l'image à la hauteur */
-    object-fit: cover; /* Couvre tout le conteneur sans distorsion */
+/* Icônes */
+#wb_FontAwesomeIcon6,
+#wb_FontAwesomeIcon9,
+#wb_Icon1 {  /* Ajout de l'icône 1 ici */
+    position: absolute;
+    background-color: #BDB76B;
+    background-image: none;
+    border: 2px solid #D0D6D7;
+    border-radius: 50%;
+    text-align: center;
+    padding: 8px;
+    vertical-align: top;
+    z-index: 10;  /* S'assurer que les icônes sont au-dessus de l'image */
 }
 
-
-#wb_Image1
-{
-   vertical-align: top;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_FontAwesomeIcon6
-{
-   background-color: #BDB76B;
-   background-image: none;
-   border: 2px solid #D0D6D7;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 8px 8px 8px 8px;
-   vertical-align: top;
-}
-#wb_FontAwesomeIcon6 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_FontAwesomeIcon6:hover
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 2px solid #2E2E2E;
-}
-#FontAwesomeIcon6
-{
-   height: 101px;
-   width: 95px;
-}
-#FontAwesomeIcon6 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 95px;
-   line-height: 101px;
-   vertical-align: middle;
-   width: 94px;
-}
-#wb_FontAwesomeIcon6:hover #FontAwesomeIcon6 i
-{
-   color: #2E2E2E;
-}
-#wb_FontAwesomeIcon9
-{
-   background-color: #BDB76B;
-   background-image: none;
-   border: 2px solid #D0D6D7;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 8px 8px 8px 8px;
-   vertical-align: top;
-}
-#wb_FontAwesomeIcon9 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_FontAwesomeIcon9:hover
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 2px solid #2E2E2E;
-}
-#FontAwesomeIcon9
-{
-   height: 101px;
-   width: 95px;
-}
-#FontAwesomeIcon9 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 95px;
-   line-height: 101px;
-   vertical-align: middle;
-   width: 94px;
-}
-#wb_FontAwesomeIcon9:hover #FontAwesomeIcon9 i
-{
-   color: #2E2E2E;
-}
-#wb_Image3
-{
-   vertical-align: top;
-}
-#Image3
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_Icon1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #BDB76B;
-   border-radius: 0px;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   vertical-align: top;
-}
-#wb_Icon1 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#Icon1
-{
-   height: 100px;
-   width: 100px;
-}
-#Icon1 i
-{
-   color: #BDB76B;
-   display: inline-block;
-   font-size: 100px;
-   line-height: 100px;
-   vertical-align: middle;
-   width: 99px;
-}
-#wb_Icon1:hover #Icon1 i
-{
-   color: #F8F8FF;
-}
-#wb_Icon1
-{
-   position: absolute;
-   left: 148px;
-   top: 327px;
-   width: 100px;
-   height: 100px;
-   text-align: center;
-   z-index: 4;
-}
-#wb_Image1
-{
-   position: absolute;
-   left: 0px;
-   top: 0px;
-   width: 396px;
-   height: 704px;
-   z-index: 0;
-}
-#wb_Image3
-{
-   position: absolute;
-   left: 136px;
-   top: 283px;
-   width: 0px;
-   height: 0px;
-   z-index: 3;
-}
-#wb_FontAwesomeIcon9
-{
-   position: absolute;
-   left: 263px;
-   top: 317px;
-   width: 95px;
-   height: 101px;
-   text-align: center;
-   z-index: 2;
-}
-#wb_FontAwesomeIcon6
-{
-   position: absolute;
-   left: 11px;
-   top: 317px;
-   width: 95px;
-   height: 101px;
-   text-align: center;
-   z-index: 1;
-}
-@media only screen and (max-width: 940px) and (orientation: portrait)
-{
-body
-{
-   background-color: #FFFFFF;
-   background-image: none;
-}
-#wb_Image1
-{
-   left: 0px;
-   top: 0px;
-   width: 396px;
-   height: 704px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_FontAwesomeIcon6
-{
-   left: 18px;
-   top: 293px;
-   width: 100px;
-   height: 114px;
-   visibility: visible;
-   display: inline;
-   margin: 0 10px 0 0 ;
-   padding: 8px 8px 8px 8px;
-}
-#FontAwesomeIcon6
-{
-   width: 100px;
-   height: 114px;
-}
-#FontAwesomeIcon6 i
-{
-   line-height: 114px;
-   font-size: 100px;
-   width: 99px;
-}
-#wb_FontAwesomeIcon9
-{
-   left: 266px;
-   top: 293px;
-   width: 100px;
-   height: 114px;
-   visibility: visible;
-   display: inline;
-   margin: 0 10px 0 0 ;
-   padding: 8px 8px 8px 8px;
-}
-#FontAwesomeIcon9
-{
-   width: 100px;
-   height: 114px;
-}
-#FontAwesomeIcon9 i
-{
-   line-height: 114px;
-   font-size: 100px;
-   width: 99px;
-}
-#wb_Image3
-{
-   left: 136px;
-   top: 283px;
-   width: 0px;
-   height: 0px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#wb_Icon1
-{
-   left: 139px;
-   top: 283px;
-   width: 118px;
-   height: 144px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 0;
-}
-#Icon1
-{
-   width: 118px;
-   height: 144px;
-}
-#Icon1 i
-{
-   line-height: 144px;
-   font-size: 118px;
-   width: 117px;
-}
+/* Positionnement des icônes */
+#wb_FontAwesomeIcon6 {
+    left: 11px;
+    top: 317px;
+    width: 95px;
+    height: 101px;
 }
 
+#wb_FontAwesomeIcon9 {
+    left: 263px;
+    top: 317px;
+    width: 95px;
+    height: 101px;
+}
+
+/* Positionnement de l'icône 1 */
+#wb_Icon1 {
+    left: 139px;  /* Positionnez l'icône 1 où vous voulez */
+    top: 283px;   /* Vous pouvez ajuster la position en fonction de l'interface */
+    width: 100px;
+    height: 100px;
+}
+
+/* Styles des icônes */
+#FontAwesomeIcon6, #FontAwesomeIcon9, #Icon1 {
+    width: 95px;
+    height: 101px;
+    display: inline-block;
+    line-height: 101px;
+    text-align: center;
+}
+
+#FontAwesomeIcon6 i, #FontAwesomeIcon9 i, #Icon1 i {
+    color: #FFFFFF;
+    font-size: 48px;  /* Ajustez la taille des icônes en fonction du design */
+    vertical-align: middle;
+}
+
+/* Styles au survol */
+#wb_FontAwesomeIcon6:hover,
+#wb_FontAwesomeIcon9:hover,
+#wb_Icon1:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #2E2E2E;
+}
+
+#wb_FontAwesomeIcon6:hover i, #wb_FontAwesomeIcon9:hover i, #wb_Icon1:hover i {
+    color: #2E2E2E;
+}
+
+/* Responsive pour petits écrans */
+@media only screen and (max-width: 940px) and (orientation: portrait) {
+    #wb_FontAwesomeIcon6,
+    #wb_FontAwesomeIcon9,
+    #wb_Icon1 {
+        width: 100px;
+        height: 114px;
+    }
+
+    #FontAwesomeIcon6, #FontAwesomeIcon9, #Icon1 {
+        line-height: 114px;
+        font-size: 100px;
+    }
+
+    #wb_FontAwesomeIcon6 {
+        left: 18px;
+        top: 293px;
+    }
+
+    #wb_FontAwesomeIcon9 {
+        left: 266px;
+        top: 293px;
+    }
+
+    #wb_Icon1 {
+        left: 139px;
+        top: 283px;
+    }
+}
