@@ -3,23 +3,80 @@
 <head>
 <meta charset="utf-8">
 <title>DSC</title>
-<meta name="generator" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="uyiuyi.png" rel="icon" type="image/png">
 <link href="font-awesome.min.css" rel="stylesheet">
-<link href="site_dsc.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
+<style>
+    /* Styles pour bloquer le défilement et couvrir l'écran */
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Empêche tout défilement */
+    }
+
+    /* Image de fond */
+    #wb_Image1 {
+        position: fixed; /* Reste fixe à l'écran */
+        top: 0;
+        left: 0;
+        width: 100vw; /* Couvre toute la largeur de l'écran */
+        height: 100vh; /* Couvre toute la hauteur de l'écran */
+        background-image: url('backsitedsc262.jpg'); /* Chemin de votre image */
+        background-size: cover; /* Adapte l'image à l'écran */
+        background-position: center; /* Centre l'image */
+        background-repeat: no-repeat; /* Évite la répétition de l'image */
+        z-index: -1; /* Place derrière les autres éléments */
+    }
+
+    /* Icônes */
+    #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9, #wb_Icon1 {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #2E2E2E;
+        padding: 10px;
+        text-align: center;
+        border: 2px solid #D0D6D7;
+        z-index: 10;
+    }
+
+    #wb_FontAwesomeIcon6 {
+        top: 317px;
+        left: 11px;
+    }
+
+    #wb_FontAwesomeIcon9 {
+        top: 317px;
+        left: 260px;
+    }
+
+    #wb_Icon1 {
+        top: 283px;
+        left: 139px;
+    }
+
+    #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i, #wb_Icon1 i {
+        color: #FFFFFF;
+        font-size: 48px;
+    }
+</style>
 </head>
 <body>
-<div id="wb_Image1">
-<img src="backsitedsc262.jpg" id="Image1" alt=""> </div>
+<div id="wb_Image1"></div>
 <div id="wb_FontAwesomeIcon6">
-<a href="https://www.instagram.com/dyna.micsportclub"><div id="FontAwesomeIcon6"><i class="fa fa-instagram"></i></div></a></div>
+    <a href="https://www.instagram.com/dyna.micsportclub">
+        <div id="FontAwesomeIcon6"><i class="fa fa-instagram"></i></div>
+    </a>
+</div>
 <div id="wb_FontAwesomeIcon9">
-<a href="https://www.tiktok.com/@dynamic.sport.clu"><div id="FontAwesomeIcon9"><i class="fa fa-tiktok"></i></div></a></div>
-<div id="wb_Image3">
-<img src="" id="Image3" alt=""></div>
+    <a href="https://www.tiktok.com/@dynamic.sport.clu">
+        <div id="FontAwesomeIcon9"><i class="fa fa-tiktok"></i></div>
+    </a>
+</div>
 <div id="wb_Icon1">
-<a href="https://www.snapchat.com/add/baugins"><div id="Icon1"><i class="fa fa-snapchat-ghost"></i></div></a></div>
+    <a href="https://www.snapchat.com/add/baugins">
+        <div id="Icon1"><i class="fa fa-snapchat-ghost"></i></div>
+    </a>
+</div>
 </body>
 </html>
