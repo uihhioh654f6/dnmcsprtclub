@@ -1,114 +1,64 @@
-/* Réinitialisation pour HTML et BODY */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;  /* Ajouter le positionnement relatif au body */
+html, body, #container {
+   width: 100%;
+   height: 100%;
 }
 
-/* Conteneur pour l'image de fond */
-#background-container {
-    position: fixed; /* L'image reste fixe en arrière-plan */
-    top: 0;
-    left: 0;
-    width: 100vw; /* Largeur complète de l'écran */
-    height: 100vh; /* Hauteur complète de l'écran */
-    overflow: hidden; /* Coupe les parties de l'image qui débordent */
-    z-index: -1; /* Place l'image derrière tout le reste */
+body {
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
 }
 
-/* Icônes */
-#wb_FontAwesomeIcon6,
-#wb_FontAwesomeIcon9,
-#wb_Icon1 {  /* Ajout de l'icône 1 ici */
-    position: absolute;
-    background-color: #BDB76B;
-    background-image: none;
-    border: 2px solid #D0D6D7;
-    border-radius: 50%;
-    text-align: center;
-    padding: 8px;
-    vertical-align: top;
-    z-index: 10;  /* S'assurer que les icônes sont au-dessus de l'image */
+#container {
+   position: relative;  /* Important pour que les éléments 'absolute' soient positionnés correctement */
+   height: 100%;
 }
 
-/* Positionnement des icônes */
-#wb_FontAwesomeIcon6 {
-    left: 11px;
-    top: 317px;
-    width: 95px;
-    height: 101px;
+#wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
+   background-color: #2E2E2E;
+   border: 2px solid #D0D6D7;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0 10px 0 0;
+   padding: 8px;
+   vertical-align: top;
+   position: absolute;
 }
 
-#wb_FontAwesomeIcon9 {
-    left: 263px;
-    top: 317px;
-    width: 95px;
-    height: 101px;
+#wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
+   color: #FFFFFF;
+   font-size: 120px;
+   line-height: 120px;
 }
 
-/* Positionnement de l'icône 1 */
-#wb_Icon1 {
-    left: 139px;  /* Positionnez l'icône 1 où vous voulez */
-    top: 283px;   /* Vous pouvez ajuster la position en fonction de l'interface */
-    width: 100px;
-    height: 100px;
-}
-
-/* Styles des icônes */
-#FontAwesomeIcon6, #FontAwesomeIcon9, #Icon1 {
-    width: 95px;
-    height: 101px;
-    display: inline-block;
-    line-height: 101px;
-    text-align: center;
-}
-
-#FontAwesomeIcon6 i, #FontAwesomeIcon9 i, #Icon1 i {
-    color: #FFFFFF;
-    font-size: 48px;  /* Ajustez la taille des icônes en fonction du design */
-    vertical-align: middle;
-}
-
-/* Styles au survol */
-#wb_FontAwesomeIcon6:hover,
-#wb_FontAwesomeIcon9:hover,
-#wb_Icon1:hover {
-    background-color: #FFFFFF;
-    border: 2px solid #2E2E2E;
-}
-
-#wb_FontAwesomeIcon6:hover i, #wb_FontAwesomeIcon9:hover i, #wb_Icon1:hover i {
-    color: #2E2E2E;
-}
-
-/* Responsive pour petits écrans */
 @media only screen and (max-width: 940px) and (orientation: portrait) {
-    #wb_FontAwesomeIcon6,
-    #wb_FontAwesomeIcon9,
-    #wb_Icon1 {
-        width: 100px;
-        height: 114px;
-    }
+   body {
+      background-color: #FFFFFF;
+      background-image: none;
+   }
 
-    #FontAwesomeIcon6, #FontAwesomeIcon9, #Icon1 {
-        line-height: 114px;
-        font-size: 100px;
-    }
+   #container {
+      position: relative; /* Assure que les éléments 'absolute' sont positionnés par rapport à ce parent */
+   }
 
-    #wb_FontAwesomeIcon6 {
-        left: 18px;
-        top: 293px;
-    }
+   /* Icône 6 (à gauche) sur mobile */
+   #wb_FontAwesomeIcon6 {
+      left: 11px;  /* Position horizontale à 11px */
+      top: 317px;  /* Position verticale à 317px */
+      width: 145px;
+      height: 128px;
+   }
 
-    #wb_FontAwesomeIcon9 {
-        left: 266px;
-        top: 293px;
-    }
-
-    #wb_Icon1 {
-        left: 139px;
-        top: 283px;
-    }
+   /* Icône 9 (à droite) sur mobile */
+   #wb_FontAwesomeIcon9 {
+      left: 221px;  /* Position horizontale à 221px */
+      top: 317px;   /* Position verticale à 317px */
+      width: 145px;
+      height: 128px;
+   }
 }
