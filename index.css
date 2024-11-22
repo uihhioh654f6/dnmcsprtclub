@@ -19,6 +19,33 @@ body {
    line-height: 1.1875;
 }
 
+/* Assurez-vous que le HTML et le BODY occupent tout l'espace */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Style pour le conteneur de l'image */
+#background-container {
+    position: absolute; /* Assurez-vous que l'image est derrière les autres éléments */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Largeur complète de la fenêtre */
+    height: 100vh; /* Hauteur complète de la fenêtre */
+    overflow: hidden; /* Coupe les parties qui débordent */
+    z-index: -1; /* Place le conteneur derrière tout */
+}
+
+/* Style pour l'image elle-même */
+#background-image {
+    width: 100%; /* S'adapte en largeur */
+    height: 100%; /* S'adapte en hauteur */
+    object-fit: cover; /* Couvre tout sans déformation */
+}
+
+
 #wb_Image1
 {
    vertical-align: top;
